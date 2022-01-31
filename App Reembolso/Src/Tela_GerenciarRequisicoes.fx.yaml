@@ -1,0 +1,456 @@
+Tela_GerenciarRequisicoes As screen:
+    LoadingSpinner: =LoadingSpinner.Data
+    LoadingSpinnerColor: =RGBA(73, 130, 5, 1)
+    OnVisible: =false
+
+    Rectangle1_2 As rectangle:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        DisabledFill: =RGBA(166, 166, 166, 1)
+        DisplayMode: =DisplayMode.View
+        Fill: =RGBA(119, 221, 119, 1)
+        FocusedBorderThickness: =4
+        Height: =66
+        HoverFill: =RGBA(119, 221, 119, 1)
+        PressedFill: =RGBA(119, 221, 119, 1)
+        Width: =640
+        ZIndex: =3
+
+    Icon2_4 As icon.Money:
+        BorderColor: =RGBA(166, 166, 166, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(220, 220, 220, 1)
+        DisabledFill: =RGBA(0, 0, 0, 0)
+        DisplayMode: =DisplayMode.View
+        FocusedBorderThickness: =4
+        Height: =54
+        HoverBorderColor: =RGBA(0, 0, 0, 0)
+        HoverColor: =ColorFade(RGBA(73, 130, 5, 1), -30%)
+        HoverFill: =RGBA(0, 0, 0, 0)
+        Icon: =Icon.Settings
+        PressedBorderColor: =RGBA(0, 0, 0, 0)
+        PressedColor: =ColorFade(RGBA(73, 130, 5, 1), -30%)
+        PressedFill: =RGBA(0, 0, 0, 0)
+        Width: =49
+        X: =77
+        Y: =6
+        ZIndex: =4
+
+    Label4_2 As label:
+        Align: =Align.Center
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisplayMode: =DisplayMode.View
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
+        Height: =62
+        Size: =18
+        Text: ="Gerenciar Requisições"
+        Width: =375
+        X: =133
+        ZIndex: =5
+
+    Icon2_5 As icon.Money:
+        BorderColor: =RGBA(166, 166, 166, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(220, 220, 220, 1)
+        DisabledFill: =RGBA(0, 0, 0, 0)
+        FocusedBorderThickness: =4
+        Height: =54
+        HoverBorderColor: =RGBA(0, 0, 0, 0)
+        HoverColor: =ColorFade(RGBA(73, 130, 5, 1), -30%)
+        HoverFill: =RGBA(0, 0, 0, 0)
+        Icon: =Icon.Cancel
+        OnSelect: =Back()
+        PressedBorderColor: =RGBA(0, 0, 0, 0)
+        PressedColor: =ColorFade(RGBA(73, 130, 5, 1), -30%)
+        PressedFill: =RGBA(0, 0, 0, 0)
+        Width: =49
+        X: =591
+        Y: =8
+        ZIndex: =6
+
+    "Gallery2 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver4.0'":
+        BorderColor: =RGBA(166, 166, 166, 1)
+        Height: =613
+        Items: =Filter(Reembolsos, Status = "Em análise")
+        Layout: =Layout.Vertical
+        TemplatePadding: =0
+        TemplateSize: =Min(160, Self.Height - 60)
+        Y: =66
+        ZIndex: =7
+
+        Image7 As image:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =2
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledFill: =RGBA(0, 0, 0, 0)
+            FocusedBorderThickness: =4
+            Height: =128
+            HoverBorderColor: =RGBA(0, 0, 0, 0)
+            HoverFill: =RGBA(0, 0, 0, 0)
+            OnSelect: =Select(Parent)
+            PressedBorderColor: =RGBA(0, 0, 0, 0)
+            PressedFill: =RGBA(0, 0, 0, 0)
+            Visible: =false
+            Width: =128
+            X: =16
+            Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
+            ZIndex: =1
+
+        Subtitle2 As label:
+            Color: =RGBA(116, 116, 116, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Semibold
+            Height: =50
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =24
+            Text: =ThisItem.Title
+            VerticalAlign: =VerticalAlign.Top
+            Width: =624
+            X: =16
+            Y: =6
+            ZIndex: =3
+
+        NextArrow2 As icon.ChevronRight:
+            AccessibleLabel: =Self.Tooltip
+            BorderColor: =RGBA(166, 166, 166, 1)
+            Color: =RGBA(119, 221, 119, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(220, 220, 220, 1)
+            DisabledFill: =RGBA(0, 0, 0, 0)
+            FocusedBorderThickness: =4
+            Height: =67
+            HoverBorderColor: =RGBA(0, 0, 0, 0)
+            HoverColor: =ColorFade(RGBA(73, 130, 5, 1), -30%)
+            HoverFill: =RGBA(0, 0, 0, 0)
+            Icon: =Icon.Search
+            OnSelect: =AIBuilder_1.Run(Gallery3.Selected.Image8,ThisItem.ID,ThisItem.Title,ThisItem.'Valor do reembolso')
+            PaddingBottom: =10
+            PaddingLeft: =10
+            PaddingRight: =10
+            PaddingTop: =10
+            PressedBorderColor: =RGBA(0, 0, 0, 0)
+            PressedColor: =ColorFade(RGBA(73, 130, 5, 1), -30%)
+            PressedFill: =RGBA(0, 0, 0, 0)
+            TabIndex: =0
+            Tooltip: ="Exibir detalhes do item"
+            Width: =63
+            X: =564
+            Y: =51
+            ZIndex: =4
+
+        Separator2 As rectangle:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            DisplayMode: =DisplayMode.View
+            Fill: =RGBA(119, 221, 119, 1)
+            Height: =2
+            OnSelect: =Select(Parent)
+            Width: =Parent.TemplateWidth
+            Y: =Parent.TemplateHeight - 1
+            ZIndex: =5
+
+        Subtitle2_1 As label:
+            Color: =RGBA(116, 116, 116, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Lighter
+            Height: =25
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =16
+            Text: ="Criado por"
+            VerticalAlign: =VerticalAlign.Top
+            Width: =167
+            X: =16
+            Y: =62
+            ZIndex: =6
+
+        Icon3 As icon.Person:
+            BorderColor: =RGBA(166, 166, 166, 1)
+            Color: =RGBA(204, 204, 204, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(220, 220, 220, 1)
+            DisabledFill: =RGBA(0, 0, 0, 0)
+            DisplayMode: =DisplayMode.View
+            FocusedBorderThickness: =4
+            Height: =25
+            HoverBorderColor: =RGBA(0, 0, 0, 0)
+            HoverColor: =ColorFade(RGBA(73, 130, 5, 1), -30%)
+            HoverFill: =RGBA(0, 0, 0, 0)
+            Icon: =Icon.Person
+            OnSelect: =Select(Parent)
+            PressedBorderColor: =RGBA(0, 0, 0, 0)
+            PressedColor: =ColorFade(RGBA(73, 130, 5, 1), -30%)
+            PressedFill: =RGBA(0, 0, 0, 0)
+            Width: =25
+            X: =12
+            Y: =93
+            ZIndex: =7
+
+        Subtitle2_2 As label:
+            Color: =RGBA(116, 116, 116, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Font: =Font.'Segoe UI'
+            Height: =25
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =16
+            Text: =ThisItem.'Criado por'.DisplayName
+            VerticalAlign: =VerticalAlign.Top
+            Width: =167
+            X: =41
+            Y: =93
+            ZIndex: =8
+
+        Icon3_1 As icon.Person:
+            BorderColor: =RGBA(166, 166, 166, 1)
+            Color: =RGBA(204, 204, 204, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(220, 220, 220, 1)
+            DisabledFill: =RGBA(0, 0, 0, 0)
+            DisplayMode: =DisplayMode.View
+            FocusedBorderThickness: =4
+            Height: =25
+            HoverBorderColor: =RGBA(0, 0, 0, 0)
+            HoverColor: =ColorFade(RGBA(73, 130, 5, 1), -30%)
+            HoverFill: =RGBA(0, 0, 0, 0)
+            Icon: =Icon.Money
+            OnSelect: =Select(Parent)
+            PressedBorderColor: =RGBA(0, 0, 0, 0)
+            PressedColor: =ColorFade(RGBA(73, 130, 5, 1), -30%)
+            PressedFill: =RGBA(0, 0, 0, 0)
+            Width: =25
+            X: =348
+            Y: =93
+            ZIndex: =9
+
+        Subtitle2_3 As label:
+            Color: =RGBA(116, 116, 116, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Lighter
+            Height: =25
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =16
+            Text: ="Valor (R$)"
+            VerticalAlign: =VerticalAlign.Top
+            Width: =167
+            X: =348
+            Y: =62
+            ZIndex: =10
+
+        Subtitle2_4 As label:
+            Color: =RGBA(116, 116, 116, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Font: =Font.'Segoe UI'
+            Height: =25
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =16
+            Text: |-
+                =Text(Value(ThisItem.'Valor do reembolso'),"[$-pt-BR]R$ #.###,00")
+            VerticalAlign: =VerticalAlign.Top
+            Width: =167
+            X: =380
+            Y: =93
+            ZIndex: =11
+
+        Image9 As image:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =2
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledFill: =RGBA(0, 0, 0, 0)
+            FocusedBorderThickness: =4
+            Height: =35
+            HoverBorderColor: =RGBA(0, 0, 0, 0)
+            HoverFill: =RGBA(0, 0, 0, 0)
+            Image: =icone_relogio
+            OnSelect: =Select(Parent)
+            PressedBorderColor: =RGBA(0, 0, 0, 0)
+            PressedFill: =RGBA(0, 0, 0, 0)
+            Width: =35
+            X: =6
+            Y: =124
+            ZIndex: =12
+
+        Subtitle2_5 As label:
+            Color: =RGBA(116, 116, 116, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Font: =Font.'Segoe UI'
+            Height: =25
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =16
+            Text: =Text(ThisItem.Criado,DateTimeFormat.ShortDate)
+            VerticalAlign: =VerticalAlign.Top
+            Width: =167
+            X: =43
+            Y: =128
+            ZIndex: =13
+
+        Image10 As image:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =2
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledFill: =RGBA(0, 0, 0, 0)
+            FocusedBorderThickness: =4
+            Height: =35
+            HoverBorderColor: =RGBA(0, 0, 0, 0)
+            HoverFill: =RGBA(0, 0, 0, 0)
+            Image: =icone_tempo
+            OnSelect: =Select(Parent)
+            PressedBorderColor: =RGBA(0, 0, 0, 0)
+            PressedFill: =RGBA(0, 0, 0, 0)
+            Width: =35
+            X: =343
+            Y: =124
+            ZIndex: =14
+
+        Subtitle2_6 As label:
+            Color: =RGBA(116, 116, 116, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Font: =Font.'Segoe UI'
+            Height: =25
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =16
+            Text: =Text(ThisItem.Modificado,DateTimeFormat.ShortDate)
+            VerticalAlign: =VerticalAlign.Top
+            Width: =167
+            X: =384
+            Y: =128
+            ZIndex: =15
+
+        Subtitle2_7 As label:
+            Color: =RGBA(116, 116, 116, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Bold
+            Height: =25
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =16
+            Text: |-
+                ="#"&ThisItem.ID
+            VerticalAlign: =VerticalAlign.Top
+            Width: =36
+            X: =583
+            Y: =125
+            ZIndex: =16
+
+    "Gallery3 As gallery.'BrowseLayout_Horizontal_TwoTextOneImageVariant_ver4.0'":
+        BorderColor: =RGBA(166, 166, 166, 1)
+        Height: =311
+        Items: =Gallery2.Selected.Anexos.Value
+        OnSelect: =
+        TemplatePadding: =0
+        TemplateSize: =325
+        Y: =692
+        ZIndex: =8
+
+        Image8 As image:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =2
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledFill: =RGBA(0, 0, 0, 0)
+            FocusedBorderThickness: =4
+            Height: =274
+            HoverBorderColor: =RGBA(0, 0, 0, 0)
+            HoverFill: =RGBA(0, 0, 0, 0)
+            Image: =ThisItem.Value
+            OnSelect: =Select(Parent);
+            PressedBorderColor: =RGBA(0, 0, 0, 0)
+            PressedFill: =RGBA(0, 0, 0, 0)
+            Width: =321
+            X: =(Parent.TemplateWidth / 2) - (Self.Width / 2)
+            Y: =16
+            ZIndex: =1
+
+    Button3 As button:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(119, 221, 119, 1)
+        Font: =Font.'Segoe UI'
+        FontWeight: =FontWeight.Semibold
+        Height: =70
+        HoverBorderColor: =RGBA(0, 0, 0, 0)
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =ColorFade(RGBA(73, 130, 5, 1), -10%)
+        OnSelect: |
+            =Patch(Reembolsos, LookUp(Reembolsos , ID = Gallery2.Selected.ID), {Status: "Aprovado"});
+        PressedBorderColor: =ColorFade(RGBA(73, 130, 5, 1), -50%)
+        PressedColor: =RGBA(255, 255, 255, 1)
+        PressedFill: =ColorFade(RGBA(73, 130, 5, 1), -30%)
+        Size: =24
+        Text: ="Aprovar"
+        Width: =198
+        X: =21
+        Y: =1050
+        ZIndex: =9
+
+    Button3_1 As button:
+        BorderColor: =RGBA(246, 88, 16, 1)
+        Color: =RGBA(246, 88, 16, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(0, 0, 0, 0)
+        Font: =Font.'Segoe UI'
+        FontWeight: =FontWeight.Semibold
+        Height: =70
+        HoverBorderColor: =RGBA(0, 0, 0, 0)
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =RGBA(246, 88, 16, 1)
+        OnSelect: |-
+            =Patch(Reembolsos, LookUp(Reembolsos , ID = Gallery2.Selected.ID), {Status: "Recusado"})
+        PressedBorderColor: =ColorFade(RGBA(73, 130, 5, 1), -50%)
+        PressedColor: =RGBA(255, 255, 255, 1)
+        PressedFill: =ColorFade(RGBA(73, 130, 5, 1), -30%)
+        Size: =24
+        Text: ="Recusar"
+        Width: =198
+        X: =244
+        Y: =1050
+        ZIndex: =10
+

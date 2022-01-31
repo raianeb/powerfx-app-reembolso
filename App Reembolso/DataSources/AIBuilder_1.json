@@ -1,0 +1,9 @@
+[
+  {
+    "AddinConnectorId": "34fd3641-9a2f-4afe-98fe-5cb56f27d5a5",
+    "AddinId": "6d1f157d-95bf-406d-b65d-cfd3240f724e",
+    "Name": "AIBuilder_1",
+    "ServiceKind": "AddinWadl",
+    "Type": "ServiceInfo"
+  }
+]

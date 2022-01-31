@@ -1,0 +1,10 @@
+App As appinfo:
+    BackEnabled: =false
+    ConfirmExit: =true
+    ConfirmExitMessage: ="Deseja sair do aplicativo ?"
+    OnStart: |-
+        =//Seta a variável com o nome do usuário logado
+        Set(varUser, User().FullName);
+        //Seta o Email do usuário logado
+        Set(varEmailUser, User().Email);
+
