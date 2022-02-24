@@ -96,7 +96,7 @@
     "Valor do Reembolso_DataCard2": 14
   },
   "FunctionParamsInvariantScripts": {},
-  "HeaderLastSavedDateTimeUTC": "02/24/2022 18:11:22",
+  "HeaderLastSavedDateTimeUTC": "02/24/2022 18:18:48",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalDatabaseReferencesAsEmpty": false,
   "LocalResourceFileNames": {
@@ -109,13 +109,13 @@
     "icone_tempo": "0008.png"
   },
   "LocalResourceRootPaths": {
-    "brasao PUC": "https://docserverpwaprodeus.blob.core.windows.net/bbfb78bb-b7d1-44d8-885e-021df6e9ef97-1/resource/Assets0Images00010.png?sv=2017-04-17&sr=b&sig=BuxS8rGhm%2FHGOBwDOkA%2F%2FOu52qNHLAXAw4FRnWBU%2BfE%3D&spr=https&se=2022-02-25T18%3A24%3A57Z&sp=r",
-    "gif_laranja": "https://docserverpwaprodeus.blob.core.windows.net/bbfb78bb-b7d1-44d8-885e-021df6e9ef97-1/resource/Assets0Images00002.gif?sv=2017-04-17&sr=b&sig=%2Ba7APZQ6m7Dvb7HjbrEhlV3SJMDtpxsJXYUtqrn5SZQ%3D&spr=https&se=2022-02-25T18%3A24%3A57Z&sp=r",
-    "gif_verde": "https://docserverpwaprodeus.blob.core.windows.net/bbfb78bb-b7d1-44d8-885e-021df6e9ef97-1/resource/Assets0Images00003.gif?sv=2017-04-17&sr=b&sig=2v7bDvcTkYZF0%2FKRg7x%2Bj3v5HTQqwCO9RAEDgFK0ZvM%3D&spr=https&se=2022-02-25T18%3A24%3A57Z&sp=r",
-    "gif_vermelho": "https://docserverpwaprodeus.blob.core.windows.net/bbfb78bb-b7d1-44d8-885e-021df6e9ef97-1/resource/Assets0Images00004.gif?sv=2017-04-17&sr=b&sig=GzFPB1w8RubhYsDugw0R%2Fnvh1YVYmpsxOjd3Vqe5sfw%3D&spr=https&se=2022-02-25T18%3A24%3A57Z&sp=r",
-    "icone_imagem": "https://docserverpwaprodeus.blob.core.windows.net/bbfb78bb-b7d1-44d8-885e-021df6e9ef97-1/resource/Assets0Images00005.png?sv=2017-04-17&sr=b&sig=8JbN64zi5n8kxAvVDoEYNh9Gw7iSlDMIC747z%2FL74uY%3D&spr=https&se=2022-02-25T18%3A24%3A57Z&sp=r",
-    "icone_relogio": "https://docserverpwaprodeus.blob.core.windows.net/bbfb78bb-b7d1-44d8-885e-021df6e9ef97-1/resource/Assets0Images00007.png?sv=2017-04-17&sr=b&sig=ok%2BFEQqILYlsAS3VRrZ1uZPKpndE1R5EABgWNVExdCM%3D&spr=https&se=2022-02-25T18%3A24%3A57Z&sp=r",
-    "icone_tempo": "https://docserverpwaprodeus.blob.core.windows.net/bbfb78bb-b7d1-44d8-885e-021df6e9ef97-1/resource/Assets0Images00008.png?sv=2017-04-17&sr=b&sig=Zks9S09tBxqlyh%2BVizloIJTbwF%2Fy4EvTKx%2FW6iViVX4%3D&spr=https&se=2022-02-25T18%3A24%3A57Z&sp=r"
+    "brasao PUC": "https://docserverpwaprodwus.blob.core.windows.net/90da1527-dad9-4349-a1cd-fef2662d68f7-1/resource/Assets0Images00010.png?sv=2017-04-17&sr=b&sig=PQbnli3wTn6Y1qzcw5jMJ0LJSpjdo9X1mVwVpqh8Wpk%3D&spr=https&se=2022-02-25T18%3A33%3A29Z&sp=r",
+    "gif_laranja": "https://docserverpwaprodwus.blob.core.windows.net/90da1527-dad9-4349-a1cd-fef2662d68f7-1/resource/Assets0Images00002.gif?sv=2017-04-17&sr=b&sig=jAJlM1wCOOyRN%2FD1vXE5vK3s2e7Vnzv3AczoYxzk3vU%3D&spr=https&se=2022-02-25T18%3A33%3A29Z&sp=r",
+    "gif_verde": "https://docserverpwaprodwus.blob.core.windows.net/90da1527-dad9-4349-a1cd-fef2662d68f7-1/resource/Assets0Images00003.gif?sv=2017-04-17&sr=b&sig=TvS8wlH1R%2FI%2B5l1EK6aNbmW1TGIi2rjU2dSxCxlL5ck%3D&spr=https&se=2022-02-25T18%3A33%3A29Z&sp=r",
+    "gif_vermelho": "https://docserverpwaprodwus.blob.core.windows.net/90da1527-dad9-4349-a1cd-fef2662d68f7-1/resource/Assets0Images00004.gif?sv=2017-04-17&sr=b&sig=Dh4MwcNfFAfXd56ZqUqd%2FLD3kIGA2CyZhSklEchnMTA%3D&spr=https&se=2022-02-25T18%3A33%3A29Z&sp=r",
+    "icone_imagem": "https://docserverpwaprodwus.blob.core.windows.net/90da1527-dad9-4349-a1cd-fef2662d68f7-1/resource/Assets0Images00005.png?sv=2017-04-17&sr=b&sig=45wf0TJmaPJ21smLeZq8Z9proChLC7MaEYFyc0H1bVA%3D&spr=https&se=2022-02-25T18%3A33%3A29Z&sp=r",
+    "icone_relogio": "https://docserverpwaprodwus.blob.core.windows.net/90da1527-dad9-4349-a1cd-fef2662d68f7-1/resource/Assets0Images00007.png?sv=2017-04-17&sr=b&sig=fzMsxL9HqMED%2BUaRlzynCSaIwNmKb3PdDWiG%2BxIoazc%3D&spr=https&se=2022-02-25T18%3A33%3A29Z&sp=r",
+    "icone_tempo": "https://docserverpwaprodwus.blob.core.windows.net/90da1527-dad9-4349-a1cd-fef2662d68f7-1/resource/Assets0Images00008.png?sv=2017-04-17&sr=b&sig=tLhcEQfwj0%2BIVB18%2BMhUSRnQrePRDmD2HDZj7jzhNhY%3D&spr=https&se=2022-02-25T18%3A33%3A29Z&sp=r"
   },
   "OldLogoFileName": "szpjudik.jpg",
   "OrderComponentMetadata": {},
@@ -265,7 +265,7 @@
   },
   "TemplateVersions": {},
   "VolatileProperties": {
-    "AnalysisLoadTime": 0.786346,
+    "AnalysisLoadTime": 0.6476608,
     "ControlCount": {
       "attachments": 1,
       "button": 6,
@@ -282,7 +282,7 @@
       "text": 3,
       "typedDataCard": 4
     },
-    "DeserializationLoadTime": 2.6223489,
+    "DeserializationLoadTime": 1.6828376,
     "ErrorCount": 0
   }
 }
